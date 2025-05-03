@@ -10,23 +10,5 @@ import { Router } from '@angular/router';
 })
 export default class HeaderComponent {
 
-  constructor(
-    private router: Router,
-  ) {}
-
-  irAInicio(){
-    this.router.navigate(['/inicio'])
-  }
-
-  irASobremi(){
-    this.router.navigate(['/sobremi'])
-  }
-
-  irAHabilidades(){
-    this.router.navigate(['/habilidades'])
-  }
-
-  irAHerramientas(){
-    this.router.navigate(['/herramientas'])
-  }
+  constructor() {}
 }

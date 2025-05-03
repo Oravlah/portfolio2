@@ -14,18 +14,6 @@ export const routes: Routes = [
         path: 'inicio',
         loadComponent: () => import('./pages/inicio/inicio.component')
       },
-      {
-        path: 'sobremi',
-        loadComponent: () => import('./pages/sobremi/sobremi.component')
-      },
-      {
-        path: 'habilidades',
-        loadComponent: () => import('./pages/habilidades/habilidades.component')
-      },
-      {
-        path: 'herramientas',
-        loadComponent: () => import('./pages/herramientas/herramientas.component')
-      }
     ]
   },
 ];
