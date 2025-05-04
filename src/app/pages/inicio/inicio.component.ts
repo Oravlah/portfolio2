@@ -10,4 +10,13 @@ import { Router } from '@angular/router';
 })
 export default class InicioComponent {
 
+  constructor(
+    private router: Router
+  ){}
+
+
+  redirectToLinkedIn() {
+    window.open('https://www.linkedin.com/in/innonautas/', '_blank');
+  }
+
 }
