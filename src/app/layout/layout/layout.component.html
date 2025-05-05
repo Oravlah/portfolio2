@@ -1,12 +1,17 @@
-<div class="min-h-screen flex flex-col">
-  <!-- Header -->
-  <app-header></app-header>
+<div class="min-h-screen flex flex-col bg-[#1e1e2f] text-white">
+  <!-- Header fijo sin borde ni espacios -->
+  <header class="fixed top-0 left-0 w-full z-50 bg-[#1e1e2f]">
+    <app-header></app-header>
+  </header>
 
-  <!-- Contenido de las rutas hijas -->
-  <main class="flex-1">
-    <router-outlet></router-outlet>
-  </main>
+  <!-- Espaciador con margen y padding ajustado -->
+  <div class="pt-[4rem] flex-1 flex flex-col">
+    <!-- Contenido de las rutas hijas -->
+    <main class="flex-1 m-0 p-0">
+      <router-outlet></router-outlet>
+    </main>
 
-  <!-- Footer -->
-  <app-footer></app-footer>
+    <!-- Footer -->
+    <app-footer></app-footer>
+  </div>
 </div>
